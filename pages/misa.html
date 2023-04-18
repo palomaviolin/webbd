@@ -16,30 +16,42 @@
     <p>Solo Misa</p>
     <center>
         <div>
-            <input type="button" value="Invitación" id="boton__invitados-opciones" onclick="myFunction()">
-            <input type="button" value="Iglesia" id="boton__invitados-opciones">
-            <input type="button" value="Restaurante" id="boton__invitados-opciones">
+            <input type="button" value="Invitación" id="boton__invitados-opciones" onclick="aparecerYdesaparecer('invitacion__detalles')">
+            <input type="button" value="Iglesia" id="boton__invitados-opciones" onclick="aparecerYdesaparecer('iglesia__detalles')">
+            <input type="button" value="Restaurante" id="boton__invitados-opciones" onclick="aparecerYdesaparecer('restaurante__detalles')">
         </div>
     </center>
-    <center><img id="invitacion__imagen" src="../images/borrador-invitacion.png" alt="" width="90%"></center>
+    <center><img class="estilo-none" id="invitacion__detalles" src="../images/borrador-invitacion.png" alt="" width="90%"></center>
+    <div class="estilo-none" id="iglesia__detalles">
+        <h2>Iglesia detalles</h2>
+    </div>
+    <div class="estilo-none" id="restaurante__detalles">
+        <h2>Restaurante detalles</h2>
+    </div>
     <script>
         console.log("\tJavaScript operativo.\n\n");
-        var x = document.getElementById("invitacion__imagen");
+
         // Ponemos el display none para que al cargar la página agarre de primeras
         // el none, porque sino, al principio, la primera vez tenía que pinchar dos
         // veces el botón para que comenzara el toggle de la invitación, y con esto
         // ya es directamente pinchando una vez y funciona perfecto.
-        x.style.display = 'none';
+        let estiloNone = document.getElementsByClassName('estilo-none');
+        invisible();
+        function invisible(){
+            for(let i=0; i<estiloNone.length; i++){
+                estiloNone[i].style.display = 'none';
+            }
+        }
         
         // https://www.w3schools.com/howto/tryit.asp?filename=tryhow_js_toggle_hide_show
-        function myFunction() {
-            
+        function aparecerYdesaparecer(elemento) {
+            var x = document.getElementById(elemento);
             if (x.style.display === "none") {
                 x.style.display = "block";
-                console.log("Aparece invitación.");
+                console.log(`Aparece ${elemento}`);
             } else {
                 x.style.display = "none";
-                console.log("Desaparece invitación.");
+                console.log(`Desaparece ${elemento}`);
             }
         }
     </script>
