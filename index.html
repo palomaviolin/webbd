@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Boda de Paloma y Nico</title>
+    <!-- https://www.w3schools.com/html/html_favicon.asp -->
+    <link rel="icon" type="image/png" href="./images/rings-wedding.png">
+    <link rel="stylesheet" type="text/css" href="./main.css">
+</head>
+<body>
+    <h1>Introduce la contraseña para ver la invitación</h1>
+    <!-- https://desarrolloweb.com/articulos/24.php -->
+    <script>
+        function acceso(){
+            window.location = "./pages/" + document.formclave.clave.value + ".html"
+        } 
+
+        var wage = document.getElementById("wage");
+        wage.addEventListener("keydown", function (e) {
+            if (e.keyCode === 13) {
+                validate(e);
+            }
+        });
+        function validate(e) {
+            acceso();
+        }
+
+
+
+    </script>
+    <form name=formclave>
+        <input type=password name=clave id="wage">
+        <input type=button value=Acceder onclick="acceso()">
+    </form>
+</body>
+</html>

@@ -1,0 +1,11 @@
+#boton__invitados-opciones{
+    width: 130px;
+    height: 35px;
+    background-color: aquamarine;
+    border-radius: 5px;
+    font-size: 20px;
+}
+
+#boton__invitados-opciones:hover{
+    background-color: antiquewhite;
+}

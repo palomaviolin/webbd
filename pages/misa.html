@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Boda de Paloma y Nico</title>
+    <!-- https://www.w3schools.com/html/html_favicon.asp -->
+    <link rel="icon" type="image/png" href="../images/rings-wedding.png">
+    <link rel="stylesheet" type="text/css" href="../main.css">
+</head>
+<body>
+    <header>
+        <center><img src="../images/titulo-largo.png" alt="" width="90%"></center>
+    </header>
+    <p>Solo Misa</p>
+    <center>
+        <div>
+            <input type="button" value="Invitación" id="boton__invitados-opciones" onclick="myFunction()">
+            <input type="button" value="Iglesia" id="boton__invitados-opciones">
+            <input type="button" value="Restaurante" id="boton__invitados-opciones">
+        </div>
+    </center>
+    <center><img id="invitacion__imagen" src="../images/borrador-invitacion.png" alt="" width="90%"></center>
+    <script>
+        console.log("\tJavaScript operativo.\n\n");
+        var x = document.getElementById("invitacion__imagen");
+        // Ponemos el display none para que al cargar la página agarre de primeras
+        // el none, porque sino, al principio, la primera vez tenía que pinchar dos
+        // veces el botón para que comenzara el toggle de la invitación, y con esto
+        // ya es directamente pinchando una vez y funciona perfecto.
+        x.style.display = 'none';
+        
+        // https://www.w3schools.com/howto/tryit.asp?filename=tryhow_js_toggle_hide_show
+        function myFunction() {
+            
+            if (x.style.display === "none") {
+                x.style.display = "block";
+                console.log("Aparece invitación.");
+            } else {
+                x.style.display = "none";
+                console.log("Desaparece invitación.");
+            }
+        }
+    </script>
+</body>
+</html>
