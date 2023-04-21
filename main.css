@@ -10,7 +10,16 @@
 
 body{
     font-family: 'roboto-regular';
+    margin: 0;
+    /* background-image: url('./images/patterns/background-1814372__480.webp'); */
+}
+
+header{
     background-image: url('./images/patterns/background-1814372__480.webp');
+    height: 300px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 #boton__invitados-opciones{
