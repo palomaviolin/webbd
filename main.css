@@ -1,3 +1,18 @@
+@font-face {
+    font-family: 'roboto-regular';
+    src: url('./fuentes/Roboto/Roboto-Regular.ttf');
+}
+
+@font-face {
+    font-family: 'roboto-bold';
+    src: url('./fuentes/Roboto/Roboto-Bold.ttf');
+}
+
+body{
+    font-family: 'roboto-regular';
+    background-image: url('./images/patterns/background-1814372__480.webp');
+}
+
 #boton__invitados-opciones{
     width: 130px;
     height: 35px;
@@ -8,6 +23,20 @@
 
 #boton__invitados-opciones:hover{
     background-color: antiquewhite;
+}
+
+.background-color__plano{
+    background-color: aliceblue;
+    display: inline-block;
+}
+
+#menu > p, #menu > ul > li > p {
+    text-align: center;
+}
+
+#menu > ul{
+    padding-left: 0px;
+    margin-left: 0px;
 }
 
 @media (max-width: 960px){
