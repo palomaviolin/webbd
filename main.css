@@ -45,12 +45,22 @@ header{
     border: 2px solid rgb(213, 40, 167);
 }
 
+.div-botones{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    margin-top: 15px;
+}
+
 #boton__invitados-opciones{
-    width: 130px;
-    height: 35px;
-    background-color: aquamarine;
+    width: 150px;
+    height: 65px;
+    background-color: rgb(178, 210, 247);
+    border: 2px solid darkgray;
     border-radius: 5px;
-    font-size: 20px;
+    font-size: 1.5rem;
+    margin-top: 20px;
+    margin-right: 20px;
 }
 
 #boton__invitados-opciones:hover{
