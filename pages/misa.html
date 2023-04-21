@@ -89,6 +89,9 @@
             }
         }
 
+        let footer = document.getElementById('footer');
+        footer.style.display = 'none';
+
         /*
         
         FUNCIÓN que hace aparecer y desaperecer los elementos cuando se pincha el botón
@@ -110,12 +113,16 @@
                     if (elementos[i].style.display === "none") {
                         elementos[i].style.display = "block";
                         console.log(`Aparece ${elemento}`);
+                        // Mostrar footer
+                        footer.style.display = 'inline-block';
                     // Si es visible entonces ocultarlo
                     // Esto es para cuando se pincha dos veces seguidas el mismo botón,
                     // para que se oculte si se estaba mostrando, que queda mejor así.
                     } else {
                         elementos[i].style.display = "none";
                         console.log(`Desaparece ${elemento}`);
+                        // Ocultar footer
+                        footer.style.display = 'none';
                     }
                 // Si el botón que se ha seleccionado NO coincide con el índice que se está recorriendo
                 // entonces esos elementos se ocultarán siempre.
