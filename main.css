@@ -22,6 +22,29 @@ header{
     align-items: center;
 }
 
+.footer-ocultos {
+    text-decoration: none;
+    display: inline-block;
+    padding: 10px 20px 10px 20px; 
+    font-size: 40px;
+    color: rgb(83, 30, 83);
+    border: 1.5px solid darkmagenta;
+    border-radius: 35px;
+    /* https://codepen.io/CodeXYZ/pen/xbdxyO */
+    -webkit-transition: -webkit-transform .8s ease-in-out;
+    -ms-transition: -ms-transform .8s ease-in-out;
+    transition: transform .8s ease-in-out;  
+}
+
+.footer-ocultos:hover {
+    transform:rotate(360deg);
+    -ms-transform:rotate(360deg);
+    -webkit-transform:rotate(360deg);
+    background-color: pink;
+    color: rgb(213, 40, 167);
+    border: 2px solid rgb(213, 40, 167);
+}
+
 #boton__invitados-opciones{
     width: 130px;
     height: 35px;
