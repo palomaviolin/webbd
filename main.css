@@ -9,3 +9,15 @@
 #boton__invitados-opciones:hover{
     background-color: antiquewhite;
 }
+
+@media (max-width: 960px){
+    .grande{
+        display: none;
+    }
+}
+
+@media (min-width: 960px){
+    .pequeño{
+        display: none;
+    }
+}

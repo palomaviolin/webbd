@@ -16,17 +16,34 @@
     <p>Solo Misa</p>
     <center>
         <div>
-            <input type="button" value="Invitación" id="boton__invitados-opciones" onclick="aparecerYdesaparecer('invitacion__detalles')">
-            <input type="button" value="Iglesia" id="boton__invitados-opciones" onclick="aparecerYdesaparecer('iglesia__detalles')">
-            <input type="button" value="Restaurante" id="boton__invitados-opciones" onclick="aparecerYdesaparecer('restaurante__detalles')">
+            <input type="button" value="Invitación" id="boton__invitados-opciones" onclick="aparecerYdesaparecer(0)">
+            <input type="button" value="Iglesia" id="boton__invitados-opciones" onclick="aparecerYdesaparecer(1)">
+            <input type="button" value="Restaurante" id="boton__invitados-opciones" onclick="aparecerYdesaparecer(2)">
         </div>
     </center>
     <center><img class="estilo-none" id="invitacion__detalles" src="../images/borrador-invitacion.png" alt="" width="90%"></center>
     <div class="estilo-none" id="iglesia__detalles">
-        <h2>Iglesia detalles</h2>
+        <h2 style="text-align: center;">Parroquia de Santa María Madre de la Iglesia</h2>
+        <center>
+            <div>
+                <p>2 de Septiembre de 2023</p>
+                <p>a las 11:00 horas</p>
+            </div>
+        </center>
+        <!-- https://mappinggis.com/2012/05/como-insertar-un-mapa-de-google-maps-en-tu-web/ -->
+        <center class="pequeño"><iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3039.7785177434757!2d-3.7566423999999987!3d40.3694351!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xd4189ccdc18f355%3A0xc34972300debefc!2sC.%20G%C3%B3mez%20de%20Arteche%2C%2030%2C%2028044%20Madrid!5e0!3m2!1ses!2ses!4v1682086611332!5m2!1ses!2ses" width="400" height="300" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe></center>
+        <center class="grande"><iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3039.7785177434757!2d-3.7566423999999987!3d40.3694351!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xd4189ccdc18f355%3A0xc34972300debefc!2sC.%20G%C3%B3mez%20de%20Arteche%2C%2030%2C%2028044%20Madrid!5e0!3m2!1ses!2ses!4v1682086611332!5m2!1ses!2ses" width="800" height="600" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe></center>
     </div>
     <div class="estilo-none" id="restaurante__detalles">
-        <h2>Restaurante detalles</h2>
+        <h2 style="text-align: center;">Asador Avelino</h2>
+        <center>
+            <div>
+                <p>(El restaurante se encuentra a 450 metros de la iglesia).</p>
+                <p>a las 14:00 horas</p>
+            </div>
+        </center>
+        <center class="pequeño"><iframe src="https://www.google.com/maps/embed?pb=!1m24!1m8!1m3!1d6079.534916510227!2d-3.7585809!3d40.3696803!3m2!1i1024!2i768!4f13.1!4m13!3e6!4m5!1s0xd4189ccdc18f355%3A0xc34972300debefc!2sC.%20G%C3%B3mez%20de%20Arteche%2C%2030%2C%2028044%20Madrid!3m2!1d40.3694351!2d-3.7566424!4m5!1s0xd418832eb014759%3A0xc09bd06b81e4a01!2sAsador%20Avelino%2C%20C.%20de%20Joaqu%C3%ADn%20Turina%2C%2042%2C%2028044%20Madrid!3m2!1d40.3720038!2d-3.7548792!5e0!3m2!1ses!2ses!4v1682087399345!5m2!1ses!2ses" width="400" height="300" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe></center>
+        <center class="grande"><iframe src="https://www.google.com/maps/embed?pb=!1m24!1m8!1m3!1d6079.534916510227!2d-3.7585809!3d40.3696803!3m2!1i1024!2i768!4f13.1!4m13!3e6!4m5!1s0xd4189ccdc18f355%3A0xc34972300debefc!2sC.%20G%C3%B3mez%20de%20Arteche%2C%2030%2C%2028044%20Madrid!3m2!1d40.3694351!2d-3.7566424!4m5!1s0xd418832eb014759%3A0xc09bd06b81e4a01!2sAsador%20Avelino%2C%20C.%20de%20Joaqu%C3%ADn%20Turina%2C%2042%2C%2028044%20Madrid!3m2!1d40.3720038!2d-3.7548792!5e0!3m2!1ses!2ses!4v1682087399345!5m2!1ses!2ses" width="800" height="600" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe></center>
     </div>
     <script>
         console.log("\tJavaScript operativo.\n\n");
@@ -42,18 +59,56 @@
                 estiloNone[i].style.display = 'none';
             }
         }
+
+        /*
         
-        // https://www.w3schools.com/howto/tryit.asp?filename=tryhow_js_toggle_hide_show
+        FUNCIÓN que hace aparecer y desaperecer los elementos cuando se pincha el botón
+        
+        Se pasa como PARÁMETRO un número que corresponde al índice de la clase 'estilo-none'
+            ● 0 → invitación
+            ● 1 → iglesia
+            ● 2 → restaurante
+
+        */
         function aparecerYdesaparecer(elemento) {
-            var x = document.getElementById(elemento);
-            if (x.style.display === "none") {
-                x.style.display = "block";
-                console.log(`Aparece ${elemento}`);
-            } else {
-                x.style.display = "none";
-                console.log(`Desaparece ${elemento}`);
+            // Localizar los elementos del html con clase 'estilo-none'
+            let elementos = document.getElementsByClassName('estilo-none');
+            // Bucle para recorrer la clase
+            for(let i=0; i<elementos.length; i++){
+                // Si el botón que se ha seleccionado coincide con el índice que se está recorriendo
+                if(elemento == i){
+                    // Si está es invisible entonces mostrarlo
+                    if (elementos[i].style.display === "none") {
+                        elementos[i].style.display = "block";
+                        console.log(`Aparece ${elemento}`);
+                    // Si es visible entonces ocultarlo
+                    // Esto es para cuando se pincha dos veces seguidas el mismo botón,
+                    // para que se oculte si se estaba mostrando, que queda mejor así.
+                    } else {
+                        elementos[i].style.display = "none";
+                        console.log(`Desaparece ${elemento}`);
+                    }
+                // Si el botón que se ha seleccionado NO coincide con el índice que se está recorriendo
+                // entonces esos elementos se ocultarán siempre.
+                }else{
+                    elementos[i].style.display = "none";
+                }
             }
         }
+
+        // Primera versión del toggle invisible-visible
+        // https://www.w3schools.com/howto/tryit.asp?filename=tryhow_js_toggle_hide_show
+        // function aparecerYdesaparecer(elemento) {
+        //     var x = document.getElementById(elemento);
+        //     if (x.style.display === "none") {
+        //         x.style.display = "block";
+        //         console.log(`Aparece ${elemento}`);
+        //     } else {
+        //         x.style.display = "none";
+        //         console.log(`Desaparece ${elemento}`);
+        //     }
+        // }
     </script>
 </body>
 </html>
+
