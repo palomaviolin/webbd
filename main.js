@@ -73,7 +73,6 @@ function aparecerYdesaparecer(elemento) {
         // entonces esos elementos se ocultarán siempre.
         }else{
             elementos[i].style.display = "none";
-            main.style.height = '100%';
         }
     }
 }

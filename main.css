@@ -177,6 +177,10 @@ footer{
     color: whitesmoke;
 }
 
+.estilo-none{
+    display: none;
+}
+
 
 @media (max-width: 450px){
     .grande, .mediano{
