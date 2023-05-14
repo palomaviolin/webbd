@@ -105,6 +105,7 @@ header{
 
 .background-color__plano > h2, p{
     text-align: center;
+    margin: 10px;
 }
 
 #menu > p, #menu > ul > li > p {
