@@ -50,6 +50,10 @@
     margin: 0;
 }
 
+.estilo-none{
+    display: none;
+}
+
 #header{
     background-image: url('./images/patterns/background-1814372__480.webp');
     height: 100vh;
@@ -101,27 +105,6 @@
     margin-bottom: 30px;
 }
 
-.datos-detallados{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    margin-bottom: 30px;
-}
-
-.datos-detallados > h2, p{
-    text-align: center;
-    margin: 10px;
-}
-
-.negrita{
-    font-family: 'roboto-bold';
-}
-
-.asistencia{
-    background-color: yellow;
-}
-
 #boton__invitados-opciones{
     width: 45vw;
     height: 80px;
@@ -139,13 +122,25 @@
     background-color: antiquewhite;
 }
 
-#menu > p, #menu > ul > li > p {
-    text-align: center;
+.datos-detallados{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 30px;
 }
 
-#menu > ul{
-    padding-left: 0px;
-    margin-left: 0px;
+.datos-detallados > h2, p{
+    text-align: center;
+    margin: 10px;
+}
+
+.negrita{
+    font-family: 'roboto-bold';
+}
+
+.resaltado{
+    background-color: yellow;
 }
 
 .iframe{
@@ -159,16 +154,17 @@
     font-size: 1rem;
 }
 
+.link-restaurante{
+    text-decoration: none;
+    color: inherit;
+}
+
 #footer{
     height: 90px;
     padding-top: 18px;
     background-color: plum;
     font-family: 'roboto-bold';
     color: whitesmoke;
-}
-
-.estilo-none{
-    display: none;
 }
 
 
