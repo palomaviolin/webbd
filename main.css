@@ -51,7 +51,7 @@
     /* background-image: url('./images/patterns/background-1814372__480.webp'); */
 }
 
-header{
+#header{
     background-image: url('./images/patterns/background-1814372__480.webp');
     height: 100vh;
     display: flex;
@@ -76,36 +76,30 @@ header{
     background-color: yellow;
 }
 
-.footer-ocultos, .flecha {
-    text-decoration: none;
-    display: inline-block;
-    padding: 10px 20px 10px 20px; 
-    font-size: 40px;
-    color: rgb(83, 30, 83);
-    border: 1.5px solid darkmagenta;
+.flecha {
+    background-color: aliceblue;
+    border: 2.5px solid rgb(19, 0, 139);
     border-radius: 35px;
+    text-decoration: none;
+    color: rgb(37, 53, 158);
+    font-size: 40px;
+    display: inline-block;
+    padding: 10px 20px 10px 20px;
+    margin-top: 150px;
+    margin-bottom: 20px;
     /* https://codepen.io/CodeXYZ/pen/xbdxyO */
     -webkit-transition: -webkit-transform .8s ease-in-out;
     -ms-transition: -ms-transform .8s ease-in-out;
     transition: transform .8s ease-in-out;
-    margin-top: 40px;
-    margin-bottom: 20px;
 }
 
-.footer-ocultos:hover, .flecha:hover {
+.flecha:hover {
     transform:rotate(360deg);
     -ms-transform:rotate(360deg);
     -webkit-transform:rotate(360deg);
     background-color: pink;
     color: rgb(213, 40, 167);
     border: 2px solid rgb(213, 40, 167);
-}
-
-.flecha{
-    background-color: aliceblue;
-    color: rgb(37, 53, 158);
-    border: 2.5px solid rgb(19, 0, 139);
-    margin-top: 150px;
 }
 
 .div-botones{
