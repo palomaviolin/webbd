@@ -103,7 +103,7 @@ header{
     margin-bottom: 30px;
 }
 
-.background-color__plano > p{
+.background-color__plano > h2, p{
     text-align: center;
 }
 
