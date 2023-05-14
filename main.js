@@ -1,7 +1,7 @@
 console.log('\t✅ enganchado el main.js\n\n');
 
 
-// ********************  JAVASCRIPT del index.html ********************
+// *********************  JAVASCRIPT del index.html **********************
 
 // https://desarrolloweb.com/articulos/24.php
 function acceso(){
@@ -20,7 +20,7 @@ w.addEventListener("keydown", function (e) {
 });
 
 
-// ********************** JAVASCRIPT de misa.html *********************
+// ********************** JAVASCRIPT de familia.html *********************
 
 
 /* 
