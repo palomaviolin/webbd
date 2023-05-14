@@ -46,6 +46,10 @@ Se pasa como PARÁMETRO un número que corresponde al índice de la clase 'estil
 
 */
 function aparecerYdesaparecer(elemento) {
+    // Localizar el main para jugar con su height porque:
+    // - cuando no se muestre ningún dato, el main debe ser height: 100vh;
+    // - cuando sí se muestren datos de iglesia o restaurante, el main debe ser height: 100%;
+    let main = document.getElementById('main');
     // Localizar los elementos del html con clase 'estilo-none'
     let elementos = document.getElementsByClassName('estilo-none');
     // Bucle para recorrer la clase
@@ -56,17 +60,20 @@ function aparecerYdesaparecer(elemento) {
             if (elementos[i].style.display === "none") {
                 elementos[i].style.display = "block";
                 cualApareceOdesaparece(elemento, 'Aparece');
+                main.style.height = '100%';
             // Si es visible entonces ocultarlo
             // Esto es para cuando se pincha dos veces seguidas el mismo botón,
             // para que se oculte si se estaba mostrando, que queda mejor así.
             } else {
                 elementos[i].style.display = "none";
                 cualApareceOdesaparece(elemento, 'Desaparece');
+                main.style.height = '100vh';
             }
         // Si el botón que se ha seleccionado NO coincide con el índice que se está recorriendo
         // entonces esos elementos se ocultarán siempre.
         }else{
             elementos[i].style.display = "none";
+            main.style.height = '100%';
         }
     }
 }

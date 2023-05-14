@@ -61,8 +61,8 @@ header{
 }
 
 #main{
-    height: 100%;
-    padding-bottom: 50px;
+    height: 100vh;
+    padding-bottom: 20px;
     display: flex;
     flex-direction: column;
     align-items: center;
