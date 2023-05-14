@@ -147,6 +147,10 @@
     background-color: yellow;
 }
 
+.fecha-limite{
+    margin-top: 0;
+}
+
 .iframe{
     display: block;
     margin: 0 auto;
@@ -162,6 +166,10 @@
 .link-restaurante{
     text-decoration: none;
     color: inherit;
+}
+
+.link-restaurante > h2{
+    margin: 0;
 }
 
 #footer{
