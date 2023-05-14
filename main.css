@@ -48,7 +48,6 @@
     font-family: 'roboto-regular';
     font-size: 1.25rem;
     margin: 0;
-    /* background-image: url('./images/patterns/background-1814372__480.webp'); */
 }
 
 #header{
@@ -58,22 +57,6 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
-}
-
-#main{
-    height: 100vh;
-    padding-bottom: 20px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-}
-
-.negrita{
-    font-family: 'roboto-bold';
-}
-
-.asistencia{
-    background-color: yellow;
 }
 
 .flecha {
@@ -102,11 +85,41 @@
     border: 2px solid rgb(213, 40, 167);
 }
 
+#main{
+    height: 100vh;
+    padding-bottom: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
 .div-botones{
     display: flex;
     flex-direction: row;
     justify-content: center;
     margin-top: 15px;
+    margin-bottom: 30px;
+}
+
+.datos-detallados{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 30px;
+}
+
+.datos-detallados > h2, p{
+    text-align: center;
+    margin: 10px;
+}
+
+.negrita{
+    font-family: 'roboto-bold';
+}
+
+.asistencia{
+    background-color: yellow;
 }
 
 #boton__invitados-opciones{
@@ -126,19 +139,6 @@
     background-color: antiquewhite;
 }
 
-.background-color__plano{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    margin-bottom: 30px;
-}
-
-.background-color__plano > h2, p{
-    text-align: center;
-    margin: 10px;
-}
-
 #menu > p, #menu > ul > li > p {
     text-align: center;
 }
@@ -148,7 +148,7 @@
     margin-left: 0px;
 }
 
-iframe{
+.iframe{
     display:block;
     margin: 0 auto;
 }
@@ -159,7 +159,7 @@ iframe{
     font-size: 1rem;
 }
 
-footer{
+#footer{
     height: 90px;
     padding-top: 18px;
     background-color: plum;
@@ -171,6 +171,8 @@ footer{
     display: none;
 }
 
+
+/* **************** MEDIAQUERIES PARA EL RESPONSIVE *************** */
 
 @media (max-width: 450px){
     .grande, .mediano{
@@ -189,7 +191,7 @@ footer{
         display: none;
     }
 
-    main{
+    #main{
         max-width: 600px;
         display: block;
         margin: 0 auto;
