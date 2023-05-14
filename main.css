@@ -8,8 +8,44 @@
     src: url('./fuentes/Roboto/Roboto-Bold.ttf');
 }
 
-body{
+/* ********************** CSS del index.html ********************** */
+
+.body__index{
     font-family: 'roboto-regular';
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 70px;
+}
+
+.body__index > h1{
+    margin-bottom: 0;
+}
+
+.body__index > form > input, .boton-password{
+    width: 250px;
+    height: 60px;
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 2rem;
+    margin: 0 auto;
+    display: block;
+    margin-bottom: 30px;
+}
+
+.body__index > form > .boton-password{
+    width: 258px;
+    height: 60px;
+    font-family: 'roboto-regular';
+    font-size: 1.65rem;
+}
+
+
+/* ************************ CSS de misa.html ************************ */
+
+.body-datos{
+    font-family: 'roboto-regular';
+    font-size: 1.25rem;
     margin: 0;
     /* background-image: url('./images/patterns/background-1814372__480.webp'); */
 }
@@ -122,14 +158,47 @@ iframe{
     margin: 0 auto;
 }
 
-@media (max-width: 960px){
-    .grande{
+.calle{
+    text-align: center;
+    padding-bottom: 30px;
+    font-size: 1rem;
+}
+
+footer{
+    height: 90px;
+    padding-top: 18px;
+    background-color: plum;
+    font-family: 'roboto-bold';
+    color: whitesmoke;
+    margin-bottom: 0;
+}
+
+
+@media (max-width: 450px){
+    .grande, .mediano{
+        display: none;
+    }
+}
+
+@media (min-width: 450px) and (max-width: 960px){
+    .pequeño, .grande{
         display: none;
     }
 }
 
 @media (min-width: 960px){
-    .pequeño{
+    .pequeño, .mediano{
         display: none;
+    }
+
+    main{
+        max-width: 600px;
+        display: block;
+        margin: 0 auto;
+    }
+
+    #boton__invitados-opciones{
+        width: 395px;
+        height: 80px;
     }
 }
