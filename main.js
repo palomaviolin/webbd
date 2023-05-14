@@ -8,8 +8,8 @@ function acceso(){
     window.location = "./pages/" + document.formclave.clave.value + ".html"
 } 
 
-var wage = document.getElementById("wage");
-wage.addEventListener("keydown", function (e) {
+var w = document.getElementById("w");
+w.addEventListener("keydown", function (e) {
     if (e.keyCode === 13) {
         validate(e);
     }

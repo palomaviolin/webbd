@@ -60,7 +60,7 @@
     justify-content: center;
     align-items: center;
     height: 100vh;
-    background-image: url('./images/patterns/background-1814372__480.webp');
+    background-image: url('./images/patterns/flores_coloridas.webp');
 }
 
 .flecha {
@@ -144,7 +144,7 @@
 }
 
 .iframe{
-    display:block;
+    display: block;
     margin: 0 auto;
 }
 
@@ -171,19 +171,19 @@
 /* **************** MEDIAQUERIES PARA EL RESPONSIVE *************** */
 
 @media (max-width: 450px){
-    .grande, .mediano{
+    .largo, .mediano{
         display: none;
     }
 }
 
 @media (min-width: 450px) and (max-width: 960px){
-    .pequeño, .grande{
+    .corto, .largo{
         display: none;
     }
 }
 
 @media (min-width: 960px){
-    .pequeño, .mediano{
+    .corto, .mediano{
         display: none;
     }
 
