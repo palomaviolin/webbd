@@ -11,13 +11,13 @@
 /* ********************** CSS del index.html ********************** */
 
 .body__index{
-    font-family: 'roboto-regular';
-    margin: 0;
     display: flex;
     flex-direction: column;
     align-items: center;
+    margin: 0;
     padding-top: 70px;
     background-color: rgb(212, 230, 246);
+    font-family: 'roboto-regular';
 }
 
 .body__index > h1{
@@ -25,13 +25,13 @@
 }
 
 .body__index > form > input, .boton-password{
+    display: block;
     width: 250px;
     height: 60px;
+    margin: 0 auto;
+    margin-bottom: 30px;
     font-family: 'Courier New', Courier, monospace;
     font-size: 2rem;
-    margin: 0 auto;
-    display: block;
-    margin-bottom: 30px;
 }
 
 .body__index > form > .boton-password{
@@ -45,9 +45,9 @@
 /* ************************ CSS de misa.html ************************ */
 
 .body-datos{
+    margin: 0;
     font-family: 'roboto-regular';
     font-size: 1.25rem;
-    margin: 0;
 }
 
 .estilo-none{
@@ -55,25 +55,25 @@
 }
 
 #header{
-    background-image: url('./images/patterns/background-1814372__480.webp');
-    height: 100vh;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    height: 100vh;
+    background-image: url('./images/patterns/background-1814372__480.webp');
 }
 
 .flecha {
+    display: inline-block;
+    padding: 10px 20px 10px 20px;
+    margin-top: 150px;
+    margin-bottom: 20px;
     background-color: aliceblue;
     border: 2.5px solid rgb(19, 0, 139);
     border-radius: 35px;
     text-decoration: none;
     color: rgb(37, 53, 158);
     font-size: 40px;
-    display: inline-block;
-    padding: 10px 20px 10px 20px;
-    margin-top: 150px;
-    margin-bottom: 20px;
     /* https://codepen.io/CodeXYZ/pen/xbdxyO */
     -webkit-transition: -webkit-transform .8s ease-in-out;
     -ms-transition: -ms-transform .8s ease-in-out;
@@ -90,11 +90,11 @@
 }
 
 #main{
-    height: 100vh;
-    padding-bottom: 20px;
     display: flex;
     flex-direction: column;
     align-items: center;
+    padding-bottom: 20px;
+    height: 100vh;
 }
 
 .div-botones{
@@ -106,16 +106,16 @@
 }
 
 #boton__invitados-opciones{
+    margin: 15px 5px;
     width: 45vw;
     height: 80px;
     background-color: rgb(178, 210, 247);
     border: 2px solid darkgray;
     border-radius: 5px;
-    font-size: 1.35rem;
-    margin: 15px 5px;
-    text-transform: uppercase;
     font-family: 'roboto-regular';
     font-weight: bold;
+    font-size: 1.35rem;
+    text-transform: uppercase;
 }
 
 #boton__invitados-opciones:hover{
@@ -149,8 +149,8 @@
 }
 
 .calle{
-    text-align: center;
     padding-bottom: 30px;
+    text-align: center;
     font-size: 1rem;
 }
 
