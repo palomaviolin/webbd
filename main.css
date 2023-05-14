@@ -16,13 +16,24 @@ body{
 
 header{
     background-image: url('./images/patterns/background-1814372__480.webp');
-    height: 300px;
+    /* height: 300px; */
+    height: 100vh;
     display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
 }
 
-.footer-ocultos {
+#main{
+    height: 100vh;
+    padding-bottom: 120px;
+}
+
+.negrita{
+    font-family: 'roboto-bold';
+}
+
+.footer-ocultos, .flecha {
     text-decoration: none;
     display: inline-block;
     padding: 10px 20px 10px 20px; 
@@ -33,16 +44,25 @@ header{
     /* https://codepen.io/CodeXYZ/pen/xbdxyO */
     -webkit-transition: -webkit-transform .8s ease-in-out;
     -ms-transition: -ms-transform .8s ease-in-out;
-    transition: transform .8s ease-in-out;  
+    transition: transform .8s ease-in-out;
+    margin-top: 40px;
+    margin-bottom: 20px;
 }
 
-.footer-ocultos:hover {
+.footer-ocultos:hover, .flecha:hover {
     transform:rotate(360deg);
     -ms-transform:rotate(360deg);
     -webkit-transform:rotate(360deg);
     background-color: pink;
     color: rgb(213, 40, 167);
     border: 2px solid rgb(213, 40, 167);
+}
+
+.flecha{
+    background-color: aliceblue;
+    color: rgb(37, 53, 158);
+    border: 2.5px solid rgb(19, 0, 139);
+    margin-top: 150px;
 }
 
 .div-botones{
@@ -53,14 +73,18 @@ header{
 }
 
 #boton__invitados-opciones{
-    width: 150px;
-    height: 65px;
+    width: 45%;
+    height: 80px;
     background-color: rgb(178, 210, 247);
     border: 2px solid darkgray;
     border-radius: 5px;
-    font-size: 1.5rem;
-    margin-top: 20px;
-    margin-right: 20px;
+    font-size: 1.35rem;
+    /* margin-top: 20px; */
+    /* margin-right: 20px; */
+    margin: 15px 5px;
+    text-transform: uppercase;
+    font-family: 'roboto-regular';
+    font-weight: bold;
 }
 
 #boton__invitados-opciones:hover{
@@ -68,8 +92,9 @@ header{
 }
 
 .background-color__plano{
-    background-color: aliceblue;
+    /* background-color: aliceblue; */
     display: inline-block;
+    margin-bottom: 30px;
 }
 
 #menu > p, #menu > ul > li > p {

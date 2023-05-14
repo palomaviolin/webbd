@@ -11,14 +11,15 @@
 </head>
 <body>
     <header id="header">
-        <center><img height="200px" width="500px" class="pequeño" src="../images/titulo-corto.png" alt="" width="90%"></center>
+        <center><img height="" width="90%" class="pequeño" src="../images/titulo-movil.png" alt="" width="90%"></center>
         <center><img class="grande" src="../images/titulo-largo.png" alt="" width="90%"></center>
+        <center><a href="#main"><div class="css-square flecha">↓</div></a></center>
     </header>
-    <main>
+    <main id="main">
         <!-- <p>Solo Misa</p> -->
         <center>
             <div class="div-botones" style="margin-bottom: 30px;">
-                <input type="button" value="Invitación" id="boton__invitados-opciones" onclick="aparecerYdesaparecer(0)">
+                <!-- <input type="button" value="Invitación" id="boton__invitados-opciones" onclick="aparecerYdesaparecer(0)"> -->
                 <input type="button" value="Iglesia" id="boton__invitados-opciones" onclick="aparecerYdesaparecer(1)">
                 <input type="button" value="Restaurante" id="boton__invitados-opciones" onclick="aparecerYdesaparecer(2)">
             </div>
@@ -28,25 +29,31 @@
             <center>
                 <div class="background-color__plano">
                     <h2>Parroquia de Santa María Madre de la Iglesia</h2>
-                    <p>2 de Septiembre de 2023</p>
-                    <p>a las 11:00 horas</p>
+                    <p>5 de Agosto de 2023</p>
+                    <p>12:30 horas</p>
+                    <p>La ceremonia comenzará a las 12:30, por lo que pedimos llegar a la iglesia a las <span class="negrita">12:00</span> para ir tomando asiento y demás.</p>
+                    <p>La <span class="negrita">etiqueta</span> será sencilla, que será también como iremos los novios. La iglesia es de barrio y el restaurante de al lado lo mismo, todo acogedor y familiar, sin pretensiones.</p>
                 </div>
             </center>
             <!-- https://mappinggis.com/2012/05/como-insertar-un-mapa-de-google-maps-en-tu-web/ -->
-            <center class="pequeño"><iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3039.7785177434757!2d-3.7566423999999987!3d40.3694351!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xd4189ccdc18f355%3A0xc34972300debefc!2sC.%20G%C3%B3mez%20de%20Arteche%2C%2030%2C%2028044%20Madrid!5e0!3m2!1ses!2ses!4v1682086611332!5m2!1ses!2ses" width="400" height="300" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe></center>
+            <center class="pequeño"><iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3039.7785177434757!2d-3.7566423999999987!3d40.3694351!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xd4189ccdc18f355%3A0xc34972300debefc!2sC.%20G%C3%B3mez%20de%20Arteche%2C%2030%2C%2028044%20Madrid!5e0!3m2!1ses!2ses!4v1684069294780!5m2!1ses!2ses" width="320" height="380" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe></center>
+            <!-- <center class="pequeño"><iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3039.7785177434757!2d-3.7566423999999987!3d40.3694351!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xd4189ccdc18f355%3A0xc34972300debefc!2sC.%20G%C3%B3mez%20de%20Arteche%2C%2030%2C%2028044%20Madrid!5e0!3m2!1ses!2ses!4v1682086611332!5m2!1ses!2ses" width="400" height="300" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe></center> -->
             <center class="grande"><iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3039.7785177434757!2d-3.7566423999999987!3d40.3694351!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xd4189ccdc18f355%3A0xc34972300debefc!2sC.%20G%C3%B3mez%20de%20Arteche%2C%2030%2C%2028044%20Madrid!5e0!3m2!1ses!2ses!4v1682086611332!5m2!1ses!2ses" width="800" height="600" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe></center>
+            <p style="text-align: center; padding-bottom: 30px;">C/ Gómez de Arteche, 30, 28044 Madrid</p>
         </div>
         <div class="estilo-none" id="restaurante__detalles">
             <center>
                 <div class="background-color__plano" style="margin-bottom: 30px;">
                     <h2>Asador Avelino</h2>
-                    <p>(El restaurante se encuentra a 450 metros de la iglesia).</p>
-                    <p>a las 14:00 horas</p>
+                    <p>(a 450 metros de la iglesia).</p>
+                    <p>14:00 horas</p>
                     <a href="#menu">Menú</a>
                 </div>
             </center>
-            <center class="pequeño"><iframe src="https://www.google.com/maps/embed?pb=!1m24!1m8!1m3!1d6079.534916510227!2d-3.7585809!3d40.3696803!3m2!1i1024!2i768!4f13.1!4m13!3e6!4m5!1s0xd4189ccdc18f355%3A0xc34972300debefc!2sC.%20G%C3%B3mez%20de%20Arteche%2C%2030%2C%2028044%20Madrid!3m2!1d40.3694351!2d-3.7566424!4m5!1s0xd418832eb014759%3A0xc09bd06b81e4a01!2sAsador%20Avelino%2C%20C.%20de%20Joaqu%C3%ADn%20Turina%2C%2042%2C%2028044%20Madrid!3m2!1d40.3720038!2d-3.7548792!5e0!3m2!1ses!2ses!4v1682087399345!5m2!1ses!2ses" width="400" height="300" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe></center>
+            <center class="pequeño"><iframe src="https://www.google.com/maps/embed?pb=!1m24!1m8!1m3!1d5335.336694829114!2d-3.7608778755724557!3d40.37079791530278!3m2!1i1024!2i768!4f13.1!4m13!3e2!4m5!1s0xd4189ccdc18f355%3A0xc34972300debefc!2sC.%20G%C3%B3mez%20de%20Arteche%2C%2030%2C%2028044%20Madrid!3m2!1d40.3694351!2d-3.7566424!4m5!1s0xd418832eb014759%3A0xc09bd06b81e4a01!2sAsador%20Avelino%2C%20C.%20de%20Joaqu%C3%ADn%20Turina%2C%2042%2C%2028044%20Madrid!3m2!1d40.3720038!2d-3.7548792!5e1!3m2!1ses!2ses!4v1684070953335!5m2!1ses!2ses" width="320" height="380" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe></center>
+            <!-- <center class="pequeño"><iframe src="https://www.google.com/maps/embed?pb=!1m24!1m8!1m3!1d6079.534916510227!2d-3.7585809!3d40.3696803!3m2!1i1024!2i768!4f13.1!4m13!3e6!4m5!1s0xd4189ccdc18f355%3A0xc34972300debefc!2sC.%20G%C3%B3mez%20de%20Arteche%2C%2030%2C%2028044%20Madrid!3m2!1d40.3694351!2d-3.7566424!4m5!1s0xd418832eb014759%3A0xc09bd06b81e4a01!2sAsador%20Avelino%2C%20C.%20de%20Joaqu%C3%ADn%20Turina%2C%2042%2C%2028044%20Madrid!3m2!1d40.3720038!2d-3.7548792!5e0!3m2!1ses!2ses!4v1682087399345!5m2!1ses!2ses" width="400" height="300" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe></center> -->
             <center class="grande"><iframe src="https://www.google.com/maps/embed?pb=!1m24!1m8!1m3!1d6079.534916510227!2d-3.7585809!3d40.3696803!3m2!1i1024!2i768!4f13.1!4m13!3e6!4m5!1s0xd4189ccdc18f355%3A0xc34972300debefc!2sC.%20G%C3%B3mez%20de%20Arteche%2C%2030%2C%2028044%20Madrid!3m2!1d40.3694351!2d-3.7566424!4m5!1s0xd418832eb014759%3A0xc09bd06b81e4a01!2sAsador%20Avelino%2C%20C.%20de%20Joaqu%C3%ADn%20Turina%2C%2042%2C%2028044%20Madrid!3m2!1d40.3720038!2d-3.7548792!5e0!3m2!1ses!2ses!4v1682087399345!5m2!1ses!2ses" width="800" height="600" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe></center>
+            <p style="text-align: center; padding-bottom: 30px;">C/ de Joaquín Turina, 42, 28044 Madrid</p>
             <center>
                 <div id="menu" class="background-color__plano">
                     <p style="font-family: 'roboto-bold';">Menú</p>
@@ -71,9 +78,9 @@
             </center>
         </div>
     </main>
-    <footer>
+    <!-- <footer>
         <center><a id="footer" href="#header" class="footer-ocultos"><div class="css-square">↑</div></a></center>
-    </footer>
+    </footer> -->
     <script>
         console.log("\tJavaScript operativo.\n\n");
 
