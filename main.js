@@ -8,6 +8,10 @@ function acceso(){
     window.location = "./pages/" + document.formclave.clave.value + ".html"
 } 
 
+function validate(e) {
+    acceso();
+}
+
 var w = document.getElementById("w");
 w.addEventListener("keydown", function (e) {
     if (e.keyCode === 13) {
@@ -15,18 +19,16 @@ w.addEventListener("keydown", function (e) {
     }
 });
 
-function validate(e) {
-    acceso();
-}
-
 
 // ********************** JAVASCRIPT de misa.html *********************
 
 
-// Ponemos el display none para que al cargar la página agarre de primeras
-// el none, porque sino, al principio, la primera vez tenía que pinchar dos
-// veces el botón para que comenzara el toggle de la invitación, y con esto
-// ya es directamente pinchando una vez y funciona perfecto.
+/* 
+Ponemos el display none para que al cargar la página agarre de primeras
+el none, porque sino, al principio, la primera vez tenía que pinchar dos
+veces el botón para que comenzara el toggle de la invitación, y con esto
+ya es directamente pinchando una vez y funciona perfecto.
+*/
 function invisible(){
     let estiloNone = document.getElementsByClassName('estilo-none');
     for(let i=0; i<estiloNone.length; i++){

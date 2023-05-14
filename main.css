@@ -146,6 +146,7 @@
 .iframe{
     display: block;
     margin: 0 auto;
+    width: 100%;
 }
 
 .calle{
@@ -185,12 +186,6 @@
 @media (min-width: 960px){
     .corto, .mediano{
         display: none;
-    }
-
-    #main{
-        max-width: 600px;
-        display: block;
-        margin: 0 auto;
     }
 
     #boton__invitados-opciones{
