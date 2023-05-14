@@ -27,6 +27,9 @@ header{
 #main{
     height: 100vh;
     padding-bottom: 120px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
 .negrita{
@@ -73,7 +76,7 @@ header{
 }
 
 #boton__invitados-opciones{
-    width: 45%;
+    width: 45vw;
     height: 80px;
     background-color: rgb(178, 210, 247);
     border: 2px solid darkgray;
@@ -93,8 +96,15 @@ header{
 
 .background-color__plano{
     /* background-color: aliceblue; */
-    display: inline-block;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
     margin-bottom: 30px;
+}
+
+.background-color__plano > p{
+    text-align: center;
 }
 
 #menu > p, #menu > ul > li > p {
@@ -104,6 +114,11 @@ header{
 #menu > ul{
     padding-left: 0px;
     margin-left: 0px;
+}
+
+iframe{
+    display:block;
+    margin: 0 auto;
 }
 
 @media (max-width: 960px){

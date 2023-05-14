@@ -10,29 +10,11 @@
     <link rel="stylesheet" type="text/css" href="./main.css">
 </head>
 <body>
-    <h1>Introduce la contraseña para ver la invitación</h1>
-    <!-- https://desarrolloweb.com/articulos/24.php -->
-    <script>
-        function acceso(){
-            window.location = "./pages/" + document.formclave.clave.value + ".html"
-        } 
-
-        var wage = document.getElementById("wage");
-        wage.addEventListener("keydown", function (e) {
-            if (e.keyCode === 13) {
-                validate(e);
-            }
-        });
-        function validate(e) {
-            acceso();
-        }
-
-
-
-    </script>
+    <h1>Contraseña:</h1>
     <form name=formclave>
         <input type=password name=clave id="wage">
         <input type=button value=Acceder onclick="acceso()">
     </form>
+    <script type="text/javascript" src="./main.js"></script>
 </body>
 </html>
