@@ -15,8 +15,27 @@
         <img class="mediano img-header" src="../images/titulo-mediano.png" alt="" width="90%">
         <img class="largo img-header" src="../images/titulo-largo.png" alt="" width="90%">
         <a href="#main"><div class="flecha">↓</div></a>
+        <script>
+            // https://www.w3schools.com/jquerymobile/tryit.asp?filename=tryjqmob_events_orientationchange2
+            document.addEventListener('DOMContentLoaded', function () {
+                window.addEventListener('orientationchange', function() {
+                    if(window.orientation == 0){
+                        console.log('The orientation has changed to portrait!');
+                        closeNav();
+                    }
+                    else{
+                        console.log('The orientation has changed to landscape!');
+                        openNav();
+                    }
+                })
+            }, false);
+        </script>
     </header>
     <main id="main">
+        <!-- https://www.w3schools.com/howto/tryit.asp?filename=tryhow_js_overlay -->
+        <div class="overlay" id="myNav">
+            <p>GIRA LA PANTALLA EN VERTICAL PARA VER BIEN LA WEB 😉</p>
+        </div>
         <div class="div-botones">
             <input type="button" value="iglesia" id="boton__invitados-opciones" onclick="aparecerYdesaparecer(0)">
             <input type="button" value="convite" id="boton__invitados-opciones" onclick="aparecerYdesaparecer(1)">
@@ -53,6 +72,17 @@
         <p>Boda de Paloma y Nico</p>
         <p>5 de Agosto de 2023</p>
     </footer>
+    <script>
+        function openNav() {
+          document.getElementById("myNav").style.width = "100%";
+          document.getElementById("myNav").style.width = "100%";
+        }
+        
+        function closeNav() {
+          document.getElementById("myNav").style.width = "0%";
+          document.getElementById("myNav").style.width = "0%";
+        }
+        </script>
     <script type="text/javascript" src="../main.js"></script>
 </body>
 </html>
