@@ -151,6 +151,12 @@
     margin-top: 0;
 }
 
+.fecha-limite-parentesis{
+    font-family: 'Times New Roman', Times, serif;
+    margin-top: 0;
+    font-style: italic;
+}
+
 .iframe{
     display: block;
     margin: 0 auto;
