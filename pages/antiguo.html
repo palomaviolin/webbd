@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Boda de Paloma y Nico</title>
+    <!-- https://www.w3schools.com/html/html_favicon.asp -->
+    <link rel="icon" type="image/png" href="../images/rings-wedding.png">
+    <link rel="stylesheet" type="text/css" href="../main.css">
+</head>
+<body class="body-datos" onload="invisible();">
+    <header id="header">
+        <img class="corto img-header" src="../images/titulo-corto.png" alt="" width="90%">
+        <img class="mediano img-header" src="../images/titulo-mediano.png" alt="" width="90%">
+        <img class="largo img-header" src="../images/titulo-largo.png" alt="" width="90%">
+        <a href="#main"><div class="flecha">↓</div></a>
+        <script>
+            // https://www.w3schools.com/jquerymobile/tryit.asp?filename=tryjqmob_events_orientationchange2
+            document.addEventListener('DOMContentLoaded', function () {
+                window.addEventListener('orientationchange', function() {
+                    if(window.orientation == 0){
+                        console.log('The orientation has changed to portrait!');
+                        closeNav();
+                    }
+                    else{
+                        console.log('The orientation has changed to landscape!');
+                        openNav();
+                    }
+                })
+            }, false);
+        </script>
+    </header>
+    <main id="main">
+        <!-- https://www.w3schools.com/howto/tryit.asp?filename=tryhow_js_overlay -->
+        <div class="overlay" id="myNav">
+            <p>GIRA LA PANTALLA EN VERTICAL PARA VER BIEN LA WEB 😉</p>
+        </div>
+        <div class="div-botones">
+            <input type="button" value="iglesia" id="boton__invitados-opciones" onclick="aparecerYdesaparecer(0)">
+            <input type="button" value="convite" id="boton__invitados-opciones" onclick="aparecerYdesaparecer(1)">
+        </div>
+        <div class="estilo-none">
+            <div class="datos-detallados">
+                <h2>Parroquia de Santa María Madre de la Iglesia</h2>
+                <p>5 de Agosto de 2023</p>
+                <p style="margin-bottom: 20px;">12:30 horas</p>
+                <p>La ceremonia comenzará a las 12:30, por lo que pedimos llegar con tiempo a la iglesia, al menos a las <span class="negrita">12:00</span>, para ir tomando asiento y demás (aparcar sin probemas quien venga en coche, etc).</p>
+                <p>La <span class="negrita">etiqueta</span> será sencilla, que será también como iremos los novios. La iglesia es de barrio y el restaurante de al lado lo mismo, todo acogedor y familiar, sin pretensiones.</p>
+            </div>
+            <!-- https://mappinggis.com/2012/05/como-insertar-un-mapa-de-google-maps-en-tu-web/ -->
+            <iframe class="iframe corto" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3039.7785177434757!2d-3.7566423999999987!3d40.3694351!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xd4189ccdc18f355%3A0xc34972300debefc!2sC.%20G%C3%B3mez%20de%20Arteche%2C%2030%2C%2028044%20Madrid!5e0!3m2!1ses!2ses!4v1684069294780!5m2!1ses!2ses" width="320" height="380" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            <iframe class="iframe mediano" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3039.7785177434757!2d-3.7566423999999987!3d40.3694351!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xd4189ccdc18f355%3A0xc34972300debefc!2sC.%20G%C3%B3mez%20de%20Arteche%2C%2030%2C%2028044%20Madrid!5e0!3m2!1ses!2ses!4v1684069294780!5m2!1ses!2ses" width="440" height="440" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            <iframe class="iframe largo" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3039.7785177434757!2d-3.7566423999999987!3d40.3694351!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xd4189ccdc18f355%3A0xc34972300debefc!2sC.%20G%C3%B3mez%20de%20Arteche%2C%2030%2C%2028044%20Madrid!5e0!3m2!1ses!2ses!4v1682086611332!5m2!1ses!2ses" width="800" height="600" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            <p class="calle">C/ Gómez de Arteche, 30, 28044 Madrid (Carabanchel)</p>
+        </div>
+        <div class="estilo-none">
+            <div class="datos-detallados">
+                <a class="link-restaurante" target="_blank" href="https://asadoravelino.com/"><h2>Asador Avelino</h2></a>
+                <p>(a 450 metros de la iglesia)</p>
+                <!-- <p>Éste es el restaurante que hemos pensado para comer, aunque aún <span class="negrita resaltado">necesitamos que nuestros invitados nos confirméis o no asistencia</span> para poder concretar con el asador y poder hacer la reserva antes de que se nos eche el tiempo encima. Gracias.</p> -->
+                <!-- <p>Fecha límite para confirmar asistencia:</p>
+                <p class="negrita resaltado fecha-limite">8 de Junio de 2023</p>
+                <p class="fecha-limite-parentesis">Confirmar por WhatsApp</p> -->
+
+                <!-- <ul>
+                    <li style="list-style-type: none; margin-bottom: 10px;">¡Hola familia!</li>
+                    <li style="list-style-type: none; margin-bottom: 10px;">Para el banquete de nuestra boda, <a href="https://docs.google.com/spreadsheets/d/170SC7eCDS7Is5Q_9K9KRYOTajI39JlfKKBFKLmkBGG0/edit?usp=sharing" target="_blank">cada comensal tiene que elegir su plato principal</a> porque tenemos que avisar de antemano al restaurante. Gracias.</li>
+                    <li style="list-style-type: none; margin-bottom: 10px;">El restaurante es un Asador, especializado en carnes y todas están buenísimas:</li>
+                    <li style="margin-left: 15px; list-style-type: circle; margin-bottom: 5px;">Las más "fáciles" de comer serían el solomillo y el rulo de cochinillo porque viene ya preparado y deshuesado.</li>
+                    <li style="margin-left: 15px; list-style-type: circle; margin-bottom: 5px;">El cochinillo asado y el cordero son los "difíciles" de comer pero están de vicio. (El cochinillo asado viene como se ve en la foto, con unas tajadas ya preparaditas para hacerlo más fácil de comer, así que tampoco es tan complicado).</li>
+                </ul> -->
+
+                <div class="div__el-menu">
+                    <center><h3><b>Menú del banquete</b></h3></center>
+
+                    <p style="font-style: italic;">Entrantes</p>
+                    <ul>
+                        <li>Salteado de setas eryngii con aceite de trufa negra.</li>
+                        <li>Hojaldre de morcilla con compota de manzana.</li>
+                        <li>Croquetas caseras de cordero con salsa de tomillo y miel.</li>
+                    </ul>
+
+                    <p style="font-style: italic;">Plato principal <span class="negrita resaltado fecha-limite">(el que haya elegido cada uno)</span></p>
+                    <ul>
+                        <li>Cochinillo asado en horno de leña con patatas panaderas.</li>
+                        <li>Rulo de cochinillo y boletus albardado en bacon con salsa de frambuesa.</li>
+                        <li>Paletilla de cordero lechal.</li>
+                        <li>Solomillo <b>CON foie</b>, y su guarnición.</li>
+                        <li>Solomillo <b>SIN foie</b>, y su guarnición.</li>
+                    </ul>
+
+                    <p style="font-style: italic;">Sorbete de limón</p>
+
+                    <p style="font-style: italic; margin-top: 20px; margin-bottom: 40px;">Tarta nupcial</p>
+                </div>
+
+                <img class="corto" width="250px" src="../images/plato__hojaldre-morcilla.png" alt="">
+                <img class="mediano" width="450px" src="../images/plato__hojaldre-morcilla.png" alt="">
+                <img class="largo" width="750px" src="../images/plato__hojaldre-morcilla.png" alt="">
+                </br>
+                </br>
+                <img class="corto" width="250px" src="../images/plato__cochinillo.png" alt="">
+                <img class="mediano" width="450px" src="../images/plato__cochinillo.png" alt="">
+                <img class="largo" width="750px" src="../images/plato__cochinillo.png" alt="">
+
+                </br>
+                </br>
+                <!--
+                    Poner un excel editable embebido en una página web.
+
+                    PASO 1:
+                    https://support.google.com/docs/answer/183965?sjid=5555938187973020431-EU#embed_files&zippy=%2Cedit-embedded-spreadsheets
+                    
+                    PASO 2:
+                    https://www.localwebstrategies.com/post/how-to-embed-editable-google-sheets-in-website
+                -->
+                <iframe height="590px" class="iframe corto" src="https://docs.google.com/spreadsheets/d/e/2PACX-1vTtLO0-NcuAsM6G4y-_gzeX9Pc7UjXKyYAjkKS76orLun8u2x_hLDcXnEnVY3q8LnQX6w2h-t0cVrBx/pubhtml?gid=0&amp;single=true&amp;widget=true&amp;headers=false"></iframe>
+                <iframe height="590px" class="iframe mediano" src="https://docs.google.com/spreadsheets/d/e/2PACX-1vTtLO0-NcuAsM6G4y-_gzeX9Pc7UjXKyYAjkKS76orLun8u2x_hLDcXnEnVY3q8LnQX6w2h-t0cVrBx/pubhtml?gid=0&amp;single=true&amp;widget=true&amp;headers=false"></iframe>
+                <iframe height="590px" class="iframe largo" src="https://docs.google.com/spreadsheets/d/e/2PACX-1vTtLO0-NcuAsM6G4y-_gzeX9Pc7UjXKyYAjkKS76orLun8u2x_hLDcXnEnVY3q8LnQX6w2h-t0cVrBx/pubhtml?gid=0&amp;single=true&amp;widget=true&amp;headers=false"></iframe>
+                <!--
+
+                    src con enlace a excel embebido con permiso de escritura:
+
+                    <iframe height="400px" class="iframe largo" src="https://docs.google.com/spreadsheets/d/170SC7eCDS7Is5Q_9K9KRYOTajI39JlfKKBFKLmkBGG0/edit?usp=sharing?gid=0&amp;single=true&amp;widget=true&amp;headers=false"></iframe>
+
+                -->
+            </div>
+
+            </br>
+            <p>Mapa (ruta de la iglesia al restaurante):</p>
+            <iframe class="iframe" src="https://www.google.com/maps/embed?pb=!1m24!1m8!1m3!1d6079.534916510227!2d-3.7585809!3d40.3696803!3m2!1i1024!2i768!4f13.1!4m13!3e6!4m5!1s0xd4189ccdc18f355%3A0xc34972300debefc!2sC.%20G%C3%B3mez%20de%20Arteche%2C%2030%2C%2028044%20Madrid!3m2!1d40.3694351!2d-3.7566424!4m5!1s0xd418832eb014759%3A0xc09bd06b81e4a01!2sAsador%20Avelino%2C%20C.%20de%20Joaqu%C3%ADn%20Turina%2C%2042%2C%2028044%20Madrid!3m2!1d40.3720038!2d-3.7548792!5e0!3m2!1ses!2ses!4v1682087399345!5m2!1ses!2ses" width="800" height="600" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            <p class="calle">C/ de Joaquín Turina, 42, 28044 Madrid</p>
+        </div>
+    </main>
+    <footer id="footer">
+        <p>Boda de Paloma y Nico</p>
+        <p>5 de Agosto de 2023</p>
+    </footer>
+    <script>
+        function openNav() {
+          document.getElementById("myNav").style.width = "100%";
+          document.getElementById("myNav").style.width = "100%";
+        }
+        
+        function closeNav() {
+          document.getElementById("myNav").style.width = "0%";
+          document.getElementById("myNav").style.width = "0%";
+        }
+        </script>
+    <script type="text/javascript" src="../main.js"></script>
+</body>
+</html>
+

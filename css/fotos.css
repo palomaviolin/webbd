@@ -1,0 +1,90 @@
+@import url("./fontawesome-free-6.4.2-web/css/all.css");
+@import url("./main.css");
+
+body{
+    margin: 0px;
+}
+
+.h1__titulo-boda{
+    /* https://fonts.google.com/specimen/Pacifico */
+    /* https://developer.mozilla.org/en-US/docs/Web/CSS/text-shadow */
+    font-family: 'Pacifico Regular';
+    font-size: 4rem;
+    color: plum;
+    text-shadow: 2px 2px 2px darkslateblue;
+    text-align: center;
+    margin-left: 10px;
+    margin-right: 10px;
+}
+
+.carrousel-fotos-boda, #video-boda{
+    display: block;
+    margin: 0 auto;
+    margin-top: 10px;
+    margin-bottom: 15px;
+    height: auto;
+    max-height: 98vh;
+    width: auto;
+    max-width: 98vw;
+}
+
+.display-block{
+    display: block;
+    z-index: 1;
+}
+
+.display-none{
+    display: none;
+}
+
+.flechasDesplazarseFotos{
+    position: absolute;
+    z-index: 2;
+    bottom: 48%;
+}
+
+#flecha-atras{
+    left: 5%;
+}
+
+#flecha-adelante{
+    right: 5%;
+}
+
+.i-flechitas{
+    font-size: 40px;
+    color: rgb(37, 99, 194);
+    background: hotpink;
+    border-radius: 25px;
+    outline: 2px solid hotpink;
+    outline-offset: 0px;
+    transition: background-color 300ms, border-color 300ms;
+}
+
+.i-flechitas:hover{
+    color: rgb(214, 127, 216);
+    background: darkblue;
+    outline: 2px solid darkblue;
+}
+
+ .flecha{
+    padding: 10px 15px 10px 15px;
+    border-radius: 50px;
+}
+
+
+/* **************** RESPONSIVE **************** */
+
+/* mediaqueries hasta 800px */
+@media (max-width: 600px){
+    .carrousel-texto{
+        font-size: 1rem;
+    }
+}
+
+/* mediaqueries a partir de 800px */
+@media (min-width: 600px){
+    .carrousel-texto{
+        font-size: 1.5rem;
+    }
+}

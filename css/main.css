@@ -1,0 +1,308 @@
+@font-face {
+    font-family: 'roboto-regular';
+    src: url('./fonts/Roboto/Roboto-Regular.ttf');
+}
+
+@font-face {
+    font-family: 'roboto-bold';
+    src: url('./fonts/Roboto/Roboto-Bold.ttf');
+}
+
+@font-face {
+    font-family: 'Pacifico Regular';
+    src: url('./fonts/Pacifico/Pacifico-Regular.ttf');
+}
+
+
+
+/* ********************** CSS del index.html ********************** */
+
+.body__index{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 0;
+    padding-top: 70px;
+    background-color: rgb(212, 230, 246);
+    font-family: 'roboto-regular';
+}
+
+.body__index > input, .boton-password{
+    display: block;
+    width: 250px;
+    height: 60px;
+    margin: 0 auto;
+    margin-bottom: 30px;
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 2rem;
+}
+
+.body__index > .boton-password{
+    width: 258px;
+    height: 60px;
+    font-family: 'roboto-regular';
+    font-size: 1.65rem;
+}
+
+
+
+/* ********* CSS de familia.html y rodzina.html ******************** */
+
+.display-block{
+    display: block;
+    margin: 0 auto;
+}
+
+.display-none{
+    display: none;
+}
+
+.body-datos{
+    margin: 0;
+    font-family: 'roboto-regular';
+    font-size: 1.25rem;
+}
+
+#header{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-image: url('../images/patterns/flores_coloridas.webp');
+}
+
+.img-header{
+    margin-top: -80px;
+}
+
+.flecha {
+    padding: 10px 15px 10px 15px;
+    border-radius: 50px;
+    display: inline-block;
+    margin-top: 30px;
+    margin-bottom: 20px;
+    background-color: aliceblue;
+    border: 2.5px solid rgb(19, 0, 139);
+    text-decoration: none;
+    color: rgb(37, 53, 158);
+    font-size: 40px;
+    /* https://codepen.io/CodeXYZ/pen/xbdxyO */
+    -webkit-transition: -webkit-transform .8s ease-in-out;
+    -ms-transition: -ms-transform .8s ease-in-out;
+    transition: transform .8s ease-in-out;
+}
+
+.flecha:hover {
+    transform:rotate(360deg);
+    -ms-transform:rotate(360deg);
+    -webkit-transform:rotate(360deg);
+    background-color: rgb(210, 142, 153);
+    color: rgb(213, 40, 167);
+    border: 2px solid rgb(213, 40, 167);
+}
+
+#main{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: auto;
+}
+
+.h1__titulo-boda{
+    /* https://fonts.google.com/specimen/Pacifico */
+    /* https://developer.mozilla.org/en-US/docs/Web/CSS/text-shadow */
+    font-family: 'Pacifico Regular';
+    font-size: 4rem;
+    color: plum;
+    text-shadow: 2px 2px 2px darkslateblue;
+    text-align: center;
+    margin-left: 10px;
+    margin-right: 10px;
+}
+
+.datos-detallados{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 15px;
+}
+
+.datos-detallados > h2, p{
+    text-align: center;
+    margin: 10px;
+}
+
+.negrita{
+    font-family: 'roboto-bold';
+}
+
+.resaltado{
+    background-color: yellow;
+}
+
+.fecha-limite{
+    margin-top: 0;
+}
+
+.fecha-limite-parentesis{
+    font-family: 'Times New Roman', Times, serif;
+    margin-top: 0;
+    font-style: italic;
+}
+
+.calle{
+    padding-bottom: 15px;
+    text-align: center;
+    font-size: 1.15rem;
+    margin-bottom: 0px;
+}
+
+.link-restaurante{
+    text-decoration: none;
+    color: inherit;
+}
+
+.link-restaurante > h2{
+    margin: 0;
+}
+
+.div__el-menu{
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+.overlay {
+    height: 100%;
+    width: 0;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    background-color: rgb(0,0,0);
+    background-color: rgba(0,0,0, 0.9);
+    overflow-x: hidden;
+    transition: 0.5s;
+    font-size: 2.5rem;
+    font-weight: bold;
+    color: aqua;
+}
+
+.overlay > p{
+    padding-top: 30vh;
+}
+
+.img-comida{
+    display: block;
+    margin: 0 auto;
+    margin-top: 10px;
+    margin-bottom: 15px;
+    height: auto;
+    max-height: 98vh;
+    width: auto;
+    max-width: 98vw;
+}
+
+#nav-web{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    font-family: 'roboto-regular';
+    font-size: 1.75rem;
+    width: 100%;
+    height: 85px;
+    background-color: grey;
+}
+
+#nav-web > div{
+    background-color: rgb(178, 210, 247);
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#nav-web > div:hover{
+    background-color: antiquewhite;
+    font-family: 'roboto-bold';
+}
+
+.img-parroquia{
+    margin: 0 auto;
+    margin-bottom: 30px;
+    max-width: 100%;
+}
+
+iframe{
+    display: block;
+    margin: 0 auto;
+    width: 95vw !important;
+    border: 1px solid gray !important;
+}
+
+select{
+    background-color: rgb(225, 221, 221);
+}
+
+#footer{
+    padding-top: 18px;
+    background-color: plum;
+    font-family: 'roboto-bold';
+    color: whitesmoke;
+}
+
+
+
+/* **************** RESPONSIVE **************** */
+
+/* mediaqueries hasta 600px */
+@media (max-width: 600px){
+    #textillo{
+        margin-top: 100px;
+    }
+
+    #footer{
+        height: 140px;
+    }
+
+    .estrecho{
+        display: block;
+        width: 95vw;
+    }
+
+    .ancho{
+        display: none;
+    }
+}
+
+/* mediaqueries a partir de 600px */
+@media (min-width: 600px){
+    #textillo{
+        margin-top: 5px;
+    }
+
+    #footer{
+        height: 90px;
+    }
+
+    .estrecho{
+        display: none;
+    }
+
+    .ancho{
+        display: block;
+        width: 95vw;
+    }
+
+    #div__imgs-comida{
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+    }
+
+    .img-comida{
+        width: 48%;
+    }
+}
