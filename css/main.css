@@ -66,7 +66,7 @@
 #header{
     display: flex;
     flex-direction: column;
-    justify-content: center;
+    justify-content: flex-start;
     align-items: center;
     height: 100vh;
     background-image: url('../images/patterns/flores_coloridas.webp');
@@ -119,7 +119,8 @@
     text-align: center;
     margin-left: 10px;
     margin-right: 10px;
-    margin-top: 0px;
+    margin-top: 90px;
+    margin-bottom: 0px;
 }
 
 .datos-detallados{
@@ -210,7 +211,7 @@
     justify-content: space-around;
     align-items: center;
     font-family: 'roboto-regular';
-    font-size: 1.75rem;
+    font-size: 1.5rem;
     width: 100%;
     height: 85px;
     background-color: grey;
@@ -265,7 +266,7 @@ select{
     }
 
     #footer{
-        height: 140px;
+        height: 180px;
     }
 
     .estrecho{
@@ -285,7 +286,7 @@ select{
     }
 
     #footer{
-        height: 90px;
+        height: 100px;
     }
 
     .estrecho{
