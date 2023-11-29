@@ -67,7 +67,7 @@ function desplazarseFotos(direccion){
     let idiomaPagina = document.documentElement.lang;
     // console.log(`Esta página está en ${idiomaPagina}`);
     if(idiomaPagina == 'pl'){
-        pCarrouselFotos.innerHTML = `Wyświetlam zdjęcie ${indiceParaMostrar+1} z ${imagenes.length}`;
+        pCarrouselFotos.innerHTML = `Zdjęcie ${indiceParaMostrar+1} z ${imagenes.length}`;
     }else if(idiomaPagina == 'es'){
         pCarrouselFotos.innerHTML = `Mostrando foto ${indiceParaMostrar+1} de ${imagenes.length}`;
     }
