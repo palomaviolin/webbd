@@ -53,7 +53,7 @@ function cambiarIdioma(value){
     }else if(value == 'Español'){
         document.getElementById('textillo').value =  'Contraseña';
         document.getElementById('boton-acceder').value = 'Acceder';
-        document.getElementById('img-bandera-idioma').setAttribute('src', './images/bandera-españa.png');
+        document.getElementById('img-bandera-idioma').setAttribute('src', './images/bandera-spain.png');
     }
 }
 
